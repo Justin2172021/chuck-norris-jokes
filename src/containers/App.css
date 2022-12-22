@@ -14,6 +14,12 @@ h1 {
   animation-iteration-count: infinite;
 }
 
+h2 {
+  margin-left: 75px;
+  color: rgb(97, 209, 243);
+  font-family: cursive, sans-serif;
+}
+
 @keyframes titleAnimation {
   0%   {color:darkred;}
   25%  {color:yellow;}
@@ -27,12 +33,18 @@ button {
   margin-left: 75px;
   border-radius: 5px;
   background-color: darkred;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 600px) {
-  button {
-      display: block;
-      margin: 0 auto;
-      margin-top: 25px;
+  button, h2 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
   }
 }

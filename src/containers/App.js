@@ -6,9 +6,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1>Chuck Norris Jokes</h1>
+        <h1>Chuck Norris Facts</h1>
+        <h2>Fact Box</h2>
         <JokeCard />
-        <button>Get New Joke</button>
+        <button>Get New Fact</button>
       </>
     )
   }
