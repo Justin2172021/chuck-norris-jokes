@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import "./App.css"
+import JokeCard from "../components/JokeCard";
 
 class App extends Component {
   render() {
     return (
-      <div>Placeholder</div>
+      <>
+        <h1>Chuck Norris Jokes</h1>
+        <JokeCard />
+        <button>Get New Joke</button>
+      </>
     )
   }
 }
