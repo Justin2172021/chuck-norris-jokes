@@ -1,0 +1,18 @@
+.joke-card {
+    height: 10em;
+    width: 15em;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 900;
+    box-shadow: 10px 5px 5px black;
+}
+
+@media only screen and (max-width: 600px) {
+    .joke-card {
+        margin: 0 auto;
+    }
+  }
