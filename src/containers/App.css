@@ -5,3 +5,34 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+h1 {
+  text-align: center;
+  color: darkred;
+  animation-name: titleAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes titleAnimation {
+  0%   {color:darkred;}
+  25%  {color:yellow;}
+  50%  {color:blue;}
+  75%  {color:rgb(8, 245, 8);}
+  100% {color:darkred;}
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 75px;
+  border-radius: 5px;
+  background-color: darkred;
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+  }
+}
