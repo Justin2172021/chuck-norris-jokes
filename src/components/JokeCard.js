@@ -1,10 +1,10 @@
 import React from "react";
 import "./JokeCard.css";
 
-const JokeCard = () => {
+const JokeCard = (props) => {
     return (
         <>
-        <div className="joke-card">fdsdgfafg  dasfsda   asdsda   asdfsdafsda  sdaf fgasdgsdgasd dfgdfsgsdf dfgdf dsasgdfgdsdsgsd sdgsdagds adsfgasdgsda.</div>
+        <div className="joke-card">{props.quote}</div>
         </>
     )
 }
