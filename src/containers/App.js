@@ -12,10 +12,15 @@ class App extends Component {
   }
 
   async onClick(e) {
-    e.preventDefault();
-    const response = await fetch("https://api.chucknorris.io/jokes/random?category=animal,career,celebrity,dev,fashion,food,history,money,movie,music,political,religion,science,sport,travel");
-    const data = await response.json();
-    this.setState({ quote: data.value });
+    try {
+      e.preventDefault();
+      const response = await fetch("https://api.chucknorris.io/jokes/random?category=animal,career,celebrity,dev,fashion,food,history,money,movie,music,political,religion,science,sport,travel");
+      const data = await response.json();
+      this.setState({ quote: data.value }); 
+    } catch (error) {
+      alert("Oops, something went wrong! Please try again.");
+      console.log(error);
+    }
   }
 
   render() {
