@@ -14,7 +14,7 @@ class App extends Component {
   async onClick(e) {
     try {
       e.preventDefault();
-      const response = await fetch("https://api.chucknorris.io/jokes/random?category=animal,career,celebrity,dev,fashion,food,history,money,movie,music,political,religion,science,sport,travel");
+      const response = await fetch("https://api.chucknorris.io/jokes/random?category=animal,career,celebrity,dev,fashion,food,history,money,movie,music,political,science,sport,travel");
       const data = await response.json();
       this.setState({ quote: data.value }); 
     } catch (error) {
